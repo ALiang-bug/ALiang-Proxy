@@ -5,7 +5,7 @@
 | 平台 | 下载 | 基本使用 |
 | --- | --- | --- |
 | Windows 10/11 x64 | Release 中的 `ALiang-Proxy-Setup-x64.exe` | 安装后导入订阅，选择默认出口。启动本地代理后可启用 Windows 系统代理，或停止本地代理后启动 TUN。TUN 每次启动需要管理员授权。 |
-| macOS 26+ Apple Silicon | Release 中的 `ALiang-Proxy-macOS-arm64.zip` | 解压并将 App 放入“应用程序”。导入订阅，启动本地服务，再按需启用系统代理。首次使用 TUN 时，在应用内安装辅助程序。 |
+| macOS 26+ Apple Silicon | Release 中的 `ALiang-Proxy-macOS-arm64.dmg` | 打开 DMG，将 `ALiang Proxy.app` 拖入“应用程序”。导入订阅，启动本地服务，再按需启用系统代理。首次使用 TUN 时，在应用内安装辅助程序。 |
 | Android 8+ ARM64 | Release 中的 `ALiang-Proxy-Android-v0.1.2.apk` | 安装 APK，导入订阅，选择节点，点击连接并允许系统 VPN 权限。 |
 
 系统代理与 TUN 使用启动时选择的出口。切换节点后请重新连接。使用结束后关闭对应模式。Windows 的 **Restore Windows Proxy** 会恢复启用前的系统代理设置。
