@@ -1,0 +1,16 @@
+ALiang Proxy for Android
+Android application and adaptation: GPL-3.0-or-later. See LICENSE-sing-box.txt.
+
+Core: sing-box v1.14.4 (SagerNet), GPL-3.0-or-later; no affiliation or endorsement.
+Android-only security dependency overrides: brotli v1.2.7, compress v1.20.2,
+golang.org/x/net v0.60.0 and associated pinned Go module updates.
+Generated bridge: SagerNet gomobile v0.1.12. Go runtime: 1.26.11.
+UI runtime: Kotlin stdlib 2.2.21.
+
+Third-party licenses are bundled under assets/licenses, including an index
+of Go dependencies used by the Android target. Gradle/SDK/JDK are build tools,
+not installation prerequisites. No private subscriptions or node credentials
+are included. Corresponding source and exact build instructions accompany
+this APK in the delivery directory.
+
+Android-only sing-vmess Vision typed-pointer and TLS-layout hardening: see corresponding source third_party/sing-vmess/ALIANG_PATCH.md.

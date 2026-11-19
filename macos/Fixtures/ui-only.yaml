@@ -1,0 +1,19 @@
+# Synthetic UI fixture. This is not a usable subscription or internet service.
+proxies:
+  - name: 本机测试节点（不可联网）
+    type: trojan
+    server: 127.0.0.1
+    port: 9
+    password: synthetic-ui-test-only
+    tls: true
+    sni: localhost
+    udp: true
+proxy-groups:
+  - name: 测试出口
+    type: select
+    proxies:
+      - 本机测试节点（不可联网）
+rules:
+  - MATCH,测试出口
+dns:
+  nameserver: [127.0.0.1]

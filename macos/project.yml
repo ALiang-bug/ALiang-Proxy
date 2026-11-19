@@ -1,0 +1,34 @@
+name: PrivateProxyMac
+options:
+  deploymentTarget:
+    macOS: '26.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.9'
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: '-'
+    ENABLE_APP_SANDBOX: NO
+    PRODUCT_BUNDLE_IDENTIFIER: local.privateproxy.mac
+    MARKETING_VERSION: 0.2.0
+    CURRENT_PROJECT_VERSION: 2
+targets:
+  PrivateProxyMac:
+    type: application
+    platform: macOS
+    sources:
+      - App
+      - path: Resources
+        buildPhase: resources
+    info:
+      path: Generated/Info.plist
+      properties:
+        CFBundleDisplayName: ALiang Proxy
+        CFBundleName: ALiang Proxy
+        CFBundleIconFile: AppIcon.icns
+        NSHighResolutionCapable: true
+        LSApplicationCategoryType: public.app-category.utilities
+schemes:
+  PrivateProxyMac:
+    build:
+      targets:
+        PrivateProxyMac: all

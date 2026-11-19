@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/SagerNet/sing-box",
+  "tag": "v1.14.4",
+  "archiveURL": "https://github.com/SagerNet/sing-box/archive/refs/tags/v1.14.4.tar.gz",
+  "archiveSHA256": "0958ccd23b1ea9a141d715d15478b1e040fd04bcca19d8ff5529636b1b753e18",
+  "goVersion": "1.25.5",
+  "gomobileVersion": "v0.1.12"
+}
